@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* De făcut ceva cu astea */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Navbar style */
+.bookmark-logo{
+    margin: 15px 7px;
+}
+.nav-items{
+    list-style-type: none;
+    float: right;
+}
+
+.nav-item{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 32px;
+}
+
+.nav-link{
+    color: hsl(229, 8%, 60%);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+
+.nav-link:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.login-button{
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 1px rgb(233, 233, 233);
+    box-sizing: border-box;
+    color: #fff;
+    padding: 8px 32px;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+
+.login-button:hover{
+    background-color: #fff;
+    color: hsl(0, 94%, 66%);
+}
