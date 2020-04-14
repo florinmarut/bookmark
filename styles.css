@@ -65,7 +65,6 @@ body{
 /* Navbar style for mobile */
 .navbar-mobile{
     background-color: hsl(229, 31%, 21%);
-    display: none;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
@@ -75,6 +74,7 @@ body{
     position: absolute;
     top: 0;
     transform: translateX(100%);
+    transition-duration: 0.4s;
 }
 
 .nav-items-mobile{
@@ -127,10 +127,10 @@ body{
 
 .hamburger-button{
     display: none;
-    height: 30px;
+    height: 15px;
     width: 32px;
     position: absolute;
-    right: 32px;
+    right: 16px;
     top: 15px;
 }
 
@@ -141,8 +141,7 @@ body{
     width: 100%;
 }
 
-.navbar-translate{
-    display: block;
+.navbar-slide{
     transform: translateX(0);
 }
 
@@ -150,7 +149,12 @@ body{
     .hamburger-button{
         display: block;
     }
+
     .nav-items{
         display: none;
+    }
+
+    .bookmark-logo{
+        margin: 16px;
     }
 }
