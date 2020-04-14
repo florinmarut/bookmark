@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    overflow-x: hidden;
     padding: 0;
 }
 
@@ -8,6 +7,12 @@ body{
     font-family: 'Rubik', sans-serif;
     font-size: 1.05rem;
     font-weight: 400;
+}
+
+#mobile-wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* De făcut ceva cu astea */
@@ -60,11 +65,11 @@ body{
 /* Navbar style for mobile */
 .navbar-mobile{
     background-color: hsl(229, 31%, 21%);
-    
+    display: none;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     opacity: 95%;
     position: absolute;
@@ -114,8 +119,38 @@ body{
 }
 
 .fas{
-    color: #fff;
+    color: #FFF;
     position: absolute;
     right: 35px;
     top: 15px;
+}
+
+.hamburger-button{
+    display: none;
+    height: 30px;
+    width: 32px;
+    position: absolute;
+    right: 32px;
+    top: 15px;
+}
+
+.hamburger-line{
+    background-color: hsl(229, 31%, 21%);
+    height: 4px;
+    margin: 5px;
+    width: 100%;
+}
+
+.navbar-translate{
+    display: block;
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 808px){
+    .hamburger-button{
+        display: block;
+    }
+    .nav-items{
+        display: none;
+    }
 }
