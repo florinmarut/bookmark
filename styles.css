@@ -1,11 +1,12 @@
 *{
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
 }
 
 body{
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 1.05rem;
     font-weight: 400;
 }
 
@@ -15,7 +16,7 @@ body{
 
 /* Navbar style */
 .bookmark-logo{
-    margin: 15px 7px;
+    margin: 15px 32px;
 }
 .nav-items{
     list-style-type: none;
@@ -54,4 +55,67 @@ body{
 .login-button:hover{
     background-color: #fff;
     color: hsl(0, 94%, 66%);
+}
+
+/* Navbar style for mobile */
+.navbar-mobile{
+    background-color: hsl(229, 31%, 21%);
+    
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    height: 100vh;
+    width: 100%;
+    opacity: 95%;
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+}
+
+.nav-items-mobile{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style-type: none;
+    width: 100%;
+}
+
+.nav-item-mobile{
+    margin: 15px;
+    text-align: center;
+    width: 80%;
+}
+
+.nav-link-mobile{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.solid-separator{
+    border-top: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 80%;
+}
+
+.login-button-mobile{
+    background-color: hsl(229, 31%, 21%);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 7px;
+    width: 100%;
+}
+
+.fas{
+    color: #fff;
+    position: absolute;
+    right: 35px;
+    top: 15px;
 }
